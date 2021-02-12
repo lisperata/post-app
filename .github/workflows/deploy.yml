@@ -19,7 +19,7 @@ jobs:
     - name: build
       run: npm run build
     - name: Bundle
-      run: mkdir ./out && mv build ./out/post-app
+      run: mkdir ./out && mkdir ./out/post-app &&  mv build ./out/post-app
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
